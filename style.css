@@ -1,13 +1,8 @@
-/* =========================================
-   エリンギ資本党 公式スタイルシート
-   ========================================= */
-
-/* 基本設定 */
 body {
     margin: 0; padding: 0;
     font-family: "Roboto", "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", sans-serif;
-    background-color: #fcfaf2; /* 【復活】エリンギの柄の色（アイボリー） */
-    color: #3e2723; /* 【復活】焦げたエリンギの色（ダークブラウン） */
+    background-color: #fcfaf2; 
+    color: #3e2723; 
     line-height: 1.8;
 }
 
@@ -17,13 +12,13 @@ body {
     padding: 0 20px; 
 }
 
-/* ヘッダー */
+
 header {
-    background-color: #5d4037; /* ブランドブラウン */
+    background-color: #5d4037; 
     color: white; 
     padding: 0.8rem 0;
     position: sticky; top: 0; z-index: 100;
-    border-bottom: 4px solid #ffd700; /* バターゴールド */
+    border-bottom: 4px solid #ffd700; 
     box-shadow: 0 2px 15px rgba(0,0,0,0.3);
 }
 
@@ -33,7 +28,7 @@ header nav ul { list-style: none; display: flex; margin: 0; }
 header nav ul li { margin-left: 25px; }
 header nav ul li a { color: white; text-decoration: none; font-weight: 500; font-size: 0.95rem; }
 
-/* ヒーロー AREA */
+
 .hero {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url('harvest-old.jpg') center/cover fixed;
     text-align: center; padding: 130px 0;
@@ -41,7 +36,7 @@ header nav ul li a { color: white; text-decoration: none; font-weight: 500; font
 }
 .hero h1 { font-size: 3rem; margin: 0; color: #fff; text-shadow: 0 2px 10px rgba(0,0,0,0.5); }
 
-/* 党首メッセージ */
+
 .leader-message { padding: 80px 0; }
 .leader-content { 
     display: flex; align-items: center; gap: 40px; flex-wrap: wrap; 
@@ -51,9 +46,7 @@ header nav ul li a { color: white; text-decoration: none; font-weight: 500; font
 .leader-image-circle { flex: 0 0 220px; height: 220px; border-radius: 50%; border: 6px solid #ffd700; overflow: hidden; }
 .leader-image-circle img { width: 100%; height: 100%; object-fit: cover; }
 
-/* =========================================
-   4. カードレイアウト（活動報告・牛肉暴走阻止設定）
-   ========================================= */
+
 .article-card {
     display: flex; 
     flex-wrap: wrap; 
@@ -65,19 +58,19 @@ header nav ul li a { color: white; text-decoration: none; font-weight: 500; font
     width: 100%;
 }
 
-/* 画像を閉じ込める檻（サイズ固定） */
+
 .article-img { 
-    flex: 0 0 400px; /* 横幅400px固定 */
-    height: 350px;   /* 高さ350px固定 */
+    flex: 0 0 400px; 
+    height: 350px;  
     overflow: hidden;
     background-color: #eee;
 }
 
-/* 牛肉画像を枠に無理やり合わせる設定 */
+
 .article-img img { 
     width: 100%; 
     height: 100%; 
-    object-fit: cover; /* これが牛肉を枠に収める魔法の命令 */
+    object-fit: cover; 
     display: block;
 }
 
@@ -102,20 +95,18 @@ header nav ul li a { color: white; text-decoration: none; font-weight: 500; font
     color: #d84315;
     font-size: 1.8rem;
 }
-/* =========================================
-   KinoTube セクション（YouTube風デザイン）
-   ========================================= */
+
 .kinotube-home { 
     padding: 80px 0;
-    background-color: #1a1a1a; /* YouTube風ダークベース */
-    color: white; /* KinoTube内は文字を白に */
+    background-color: #1a1a1a;
+    color: white; /
     border-top: 5px solid #ffd700;
     border-bottom: 5px solid #ffd700;
 }
 
 .section-title { 
     font-size: 1.6rem; margin-bottom: 30px; color: #fff; font-weight: bold;
-    border-left: 6px solid #ffd700; /* バターゴールドのアクセント */
+    border-left: 6px solid #ffd700; 
     padding-left: 15px; 
 }
 
@@ -125,23 +116,23 @@ header nav ul li a { color: white; text-decoration: none; font-weight: 500; font
     gap: 20px; 
 }
 
-/* 動画カード：画像と情報をセットにして浮き上がらせる */
+
 .video-card { 
-    background: #1a1a1a; /* グリッド全体の背景と同じにする */
+    background: #1a1a1a; 
     cursor: pointer;
     transition: transform 0.2s;
 }
 
-/* マウスを乗せた時の動き */
+
 .video-card:hover { 
     transform: translateY(-5px);
 }
 
-/* サムネイル部分を角丸に */
+
 .thumbnail { 
     width: 100%;
-    aspect-ratio: 16 / 9; /* YouTubeの比率 */
-    background-color: #5d4037; /* ブランドブラウン */
+    aspect-ratio: 16 / 9; 
+    background-color: #5d4037;
     border-radius: 12px; 
     overflow: hidden;
     position: relative;
@@ -150,16 +141,16 @@ header nav ul li a { color: white; text-decoration: none; font-weight: 500; font
 
 .thumbnail img { width: 100%; height: 100%; object-fit: cover; }
 
-/* 【調整】再生アイコン：三角をYouTube風の質感に */
+
 .play-icon { 
     position: absolute; top: 50%; left: 50%; 
     transform: translate(-50%, -50%);
-    font-size: 3rem; /* 【重要】大きすぎず、クッキリ見えるサイズ */
-    color: rgba(255,255,255,0.7); /* 初期は少し透明 */
+    font-size: 3rem;
+    color: rgba(255,255,255,0.7); 
     transition: 0.3s ease;
 }
 
-/* ホバーで白く強調される */
+
 .video-card:hover .play-icon {
     color: rgba(255,255,255,0.9);
     transform: translate(-50%, -50%) scale(1.1);
@@ -171,10 +162,10 @@ header nav ul li a { color: white; text-decoration: none; font-weight: 500; font
     padding: 2px 6px; border-radius: 4px; font-size: 0.75rem; font-weight: bold;
 }
 
-/* 動画情報エリア（YouTube風） */
+
 .video-info { display: flex; gap: 12px; }
 
-/* チャンネルアイコン */
+
 .channel-icon {
     flex: 0 0 36px; height: 36px; 
     border-radius: 50%; overflow: hidden;
@@ -188,9 +179,7 @@ header nav ul li a { color: white; text-decoration: none; font-weight: 500; font
 }
 .video-meta { font-size: 0.8rem; color: #bdbdbd; }
 
-/* =========================================
-   導線カード（ダークモード対応）
-   ========================================= */
+
 .home-summary { padding: 60px 0; }
 .grid-container { 
     display: grid; 
